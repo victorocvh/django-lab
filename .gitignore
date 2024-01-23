@@ -1,0 +1,8 @@
+# Ignore todos os arquivos.
+*
+
+# Menos os específicados abaixo.
+!django_web/
+!docker-compose.yaml
+!requirements.txt
+!.gitignore

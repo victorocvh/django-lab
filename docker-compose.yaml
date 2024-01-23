@@ -1,0 +1,14 @@
+
+services:
+  django-web:
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: django-web
+    ports:
+     - "8080:8000"
+    restart: always
+    volumes: 
+      - .:/app
+    working_dir: /app/django_web
