@@ -1,6 +1,8 @@
 
 services:
   django-web:
+    depends_on: 
+      - django-postgresql
     build:
       context: .
       dockerfile: Dockerfile
@@ -13,12 +15,14 @@ services:
     working_dir: /app/django_web
 
   django-postgresql:
-    container_name: django-db
+    container_name: djangodb
     image: postgres 
     restart: always
     ports:
       - "5432:5432"
-    environment: 
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: admin
-      POSTGRES_DB: django-web
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - ./pgdata:/app/data
