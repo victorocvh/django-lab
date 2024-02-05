@@ -1,6 +1,8 @@
-# Projeto Django-Solid
+# Projeto Django-FlashCards-Solid
 
-O projeto `django-solid` é uma aplicação web construída utilizando o framework Django, com um foco especial em aderir a boas práticas de clean code, princípios SOLID e implementando os 12 fatores para garantir uma aplicação segura, eficiente e escalável.
+O projeto `django-flashcards-solid` é uma aplicação web construída utilizando o framework Django, com um foco especial em aderir a boas práticas de clean code, princípios SOLID e implementando os 12 fatores para garantir uma aplicação segura, eficiente e escalável.
+
+O projeto inicialmente é um teste, pensando em uma aplicação minha para venda de cursos.
 
 
 ## Tecnologias e Conceitos Utilizados
@@ -14,4 +16,6 @@ O projeto `django-solid` é uma aplicação web construída utilizando o framewo
 
 ## Práticas Adotadas
 
-*Em breve...*
+1 - Primeira prática adotada (12 fatores) foi a construção utilizando docker com todas as dependências em suas versões declaradas, isoladas e autocontidas. Permitindo a introdução de novos colaboradores e migração de ambiente com facilidade.
+
+2 - Segunda prática adotada (12 fatores) construção utilizando variavéis de ambientes ao inves de deixar no settings.py exposto.
